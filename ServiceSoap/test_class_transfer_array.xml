@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7d302d48-9430-43ad-964f-ec94de350d1e" isOneWay="false" action="http://tempuri.org/test_class_transfer_array" name="test_class_transfer_array" bindingOperationName="test_class_transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7d302d48-9430-43ad-964f-ec94de350d1efileName">test_class_transfer_array</con:setting>
+  </con:settings>
+  <con:call id="cd1b35cc-b000-4172-a4fe-5178ef777d94" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:test_class_transfer_array>\r
+         <!--Optional:-->\r
+         <tem:x>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:int>?</tem:int>\r
+         </tem:x>\r
+      </tem:test_class_transfer_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/test_class_transfer_array"/>
+  </con:call>
+</con:operation>

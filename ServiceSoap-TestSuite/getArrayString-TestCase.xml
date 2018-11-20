@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="229cf181-466d-4d91-8440-2237c1d47a79" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="getArrayString TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="229cf181-466d-4d91-8440-2237c1d47a79fileName">getArrayString-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="20362d27-4d58-4c29-bdc5-4e6ebc9696cf" name="getArrayString">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>getArrayString</con:operation>
+      <con:request name="getArrayString" id="d8e3fdab-8e1c-4f2d-8f6c-44b7ffb8e66b">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:getArrayString>
+         <!--Optional:-->
+         <tem:test>
+            <!--Zero or more repetitions:-->
+            <tem:string>?</tem:string>
+         </tem:test>
+      </tem:getArrayString>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="http://tempuri.org/getArrayString" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="64c54b1a-2319-4379-a130-6a1368341e03" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="HelloWorld_XML TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="64c54b1a-2319-4379-a130-6a1368341e03fileName">HelloWorld_XML-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="22231187-d694-4d02-8420-603b92e37e28" name="HelloWorld_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>HelloWorld_XML</con:operation>
+      <con:request name="HelloWorld_XML" id="ec3ae82f-5f7d-4e0d-b0c9-242f288cb7ba">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:HelloWorld_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/HelloWorld_XML"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

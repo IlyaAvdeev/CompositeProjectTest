@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="22b08605-b346-4e2b-8a16-586cc49768ca" isOneWay="false" action="http://tempuri.org/Con_Stroka" name="Con_Stroka" bindingOperationName="Con_Stroka" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="22b08605-b346-4e2b-8a16-586cc49768cafileName">Con_Stroka</con:setting>
+  </con:settings>
+  <con:call id="6c042509-de81-4a2c-a381-df28f08e7502" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Con_Stroka>\r
+         <!--Optional:-->\r
+         <tem:x>?</tem:x>\r
+         <!--Optional:-->\r
+         <tem:y>?</tem:y>\r
+      </tem:Con_Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Con_Stroka"/>
+  </con:call>
+</con:operation>

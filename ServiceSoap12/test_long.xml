@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6ebf41cc-0d54-4ee5-ae4f-146d20c23a28" isOneWay="false" action="http://tempuri.org/test_long" name="test_long" bindingOperationName="test_long" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6ebf41cc-0d54-4ee5-ae4f-146d20c23a28fileName">test_long</con:setting>
+  </con:settings>
+  <con:call id="6261c1cd-c348-40c0-a324-e59c5be843e8" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_long>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_long>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_longRequest"/>
+  </con:call>
+</con:operation>

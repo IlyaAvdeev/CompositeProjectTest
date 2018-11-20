@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3d4a2417-39c6-4e7c-b149-0eba6e0bfea4" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Con_Stroka TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3d4a2417-39c6-4e7c-b149-0eba6e0bfea4fileName">Con_Stroka-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="929ac601-b908-4071-8dd9-99862af8fc65" name="Con_Stroka">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="Con_Stroka" id="74c54786-dac4-47ca-8d6b-a9fdcb4e14d1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Con_Stroka>
+         <!--Optional:-->
+         <tem:x>?</tem:x>
+         <!--Optional:-->
+         <tem:y>?</tem:y>
+      </tem:Con_Stroka>
+   </soap:Body>
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/Con_StrokaRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

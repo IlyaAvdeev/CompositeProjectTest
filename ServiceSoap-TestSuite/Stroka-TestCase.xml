@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="61e62794-462b-471f-a591-570bab88451c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Stroka TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="61e62794-462b-471f-a591-570bab88451cfileName">Stroka-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="4b5fc213-9dd8-40b4-8a70-98dbc4eae132" name="Stroka">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>Stroka</con:operation>
+      <con:request name="Stroka" id="9715253b-f7be-40eb-abf7-db4e4d2c0a0d">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Stroka>\r
+         <!--Optional:-->\r
+         <tem:x>?</tem:x>\r
+      </tem:Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/Stroka"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

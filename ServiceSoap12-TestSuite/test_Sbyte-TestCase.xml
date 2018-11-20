@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c6171a96-5bd0-4b7c-bd8f-c7a64a1bbf0c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_Sbyte TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c6171a96-5bd0-4b7c-bd8f-c7a64a1bbf0cfileName">test_Sbyte-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="9e090ab6-7a71-4dd5-a90e-0c809c19614b" name="test_Sbyte">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_Sbyte</con:operation>
+      <con:request name="test_Sbyte" id="a24c3661-1911-4a59-87d1-fb67d0422f14">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_Sbyte>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_Sbyte>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_SbyteRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

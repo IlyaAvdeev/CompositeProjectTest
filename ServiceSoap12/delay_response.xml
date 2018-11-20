@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1332b019-72bf-4988-a4c2-c7708adb3b6d" isOneWay="false" action="http://tempuri.org/delay_response" name="delay_response" bindingOperationName="delay_response" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1332b019-72bf-4988-a4c2-c7708adb3b6dfileName">delay_response</con:setting>
+  </con:settings>
+  <con:call id="c84ba136-a478-4617-ae70-f2dab2f39a03" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:delay_response>\r
+         <tem:t>?</tem:t>\r
+      </tem:delay_response>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/delay_responseRequest"/>
+  </con:call>
+</con:operation>

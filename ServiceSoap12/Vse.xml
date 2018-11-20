@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4ecf51cc-b27e-4c57-89a3-bee7b82d0a1f" isOneWay="false" action="http://tempuri.org/Vse" name="Vse" bindingOperationName="Vse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4ecf51cc-b27e-4c57-89a3-bee7b82d0a1ffileName">Vse</con:setting>
+  </con:settings>
+  <con:call id="d0f08b67-d250-4a91-81eb-10d6bd52d5d5" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Vse>\r
+         <tem:x>?</tem:x>\r
+         <tem:y>?</tem:y>\r
+         <!--Optional:-->\r
+         <tem:z>?</tem:z>\r
+      </tem:Vse>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/VseRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8ade39c4-bfec-45f4-990b-32e7de4171c2" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_complex_class TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8ade39c4-bfec-45f4-990b-32e7de4171c2fileName">test_complex_class-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="c87dd6d6-953b-4104-b24a-c34160c5f6df" name="test_complex_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_complex_class</con:operation>
+      <con:request name="test_complex_class" id="3f77ee33-91ac-40d5-93b9-5a6a40f97512">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_complex_class>\r
+         <!--Optional:-->\r
+         <tem:xx>\r
+            <!--Optional:-->\r
+            <tem:trans/>\r
+            <!--Optional:-->\r
+            <tem:trans2/>\r
+            <!--Optional:-->\r
+            <tem:Trans/>\r
+            <!--Optional:-->\r
+            <tem:Trans2/>\r
+         </tem:xx>\r
+      </tem:test_complex_class>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_complex_classRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4136569a-69f7-4cf1-adbe-4ec51e5148c6" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_char TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4136569a-69f7-4cf1-adbe-4ec51e5148c6fileName">test_char-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="eda7b757-c5c8-4d7b-a90e-4b7a30408c79" name="test_char">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_char</con:operation>
+      <con:request name="test_char" id="a0f9ab3d-de54-4744-86c4-6814eb6e7305">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_char>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_char>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_charRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

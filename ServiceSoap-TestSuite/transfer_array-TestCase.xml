@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5ba6e18f-b899-4165-a8e3-17492863728f" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="transfer_array TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5ba6e18f-b899-4165-a8e3-17492863728ffileName">transfer_array-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="3d73bacd-a016-4d26-9217-c36a7adaef40" name="transfer_array">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>transfer_array</con:operation>
+      <con:request name="transfer_array" id="3993f61e-aa3c-4392-ad49-5b35eaa2dbb9">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:transfer_array>\r
+         <!--Optional:-->\r
+         <tem:x>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:int>?</tem:int>\r
+         </tem:x>\r
+      </tem:transfer_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/transfer_array"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

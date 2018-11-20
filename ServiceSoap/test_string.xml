@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2933971c-6b29-441b-b12f-ddfbaff9a408" isOneWay="false" action="http://tempuri.org/test_string" name="test_string" bindingOperationName="test_string" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2933971c-6b29-441b-b12f-ddfbaff9a408fileName">test_string</con:setting>
+  </con:settings>
+  <con:call id="5242d709-1889-4b38-857d-461280a1acb4" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:test_string>\r
+         <!--Optional:-->\r
+         <tem:t>?</tem:t>\r
+      </tem:test_string>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/test_string"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6d68c97d-6d13-4b5b-8d43-d1ea5e9dfeda" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="getArrayInt TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6d68c97d-6d13-4b5b-8d43-d1ea5e9dfedafileName">getArrayInt-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="5f0301d7-56a1-43a2-8959-1012e770fce4" name="getArrayInt">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>getArrayInt</con:operation>
+      <con:request name="getArrayInt" id="2dc08bde-2a2c-4eca-b63b-a793ab097628">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:getArrayInt>
+         <!--Optional:-->
+         <tem:test>
+            <!--Zero or more repetitions:-->
+            <tem:int>?</tem:int>
+         </tem:test>
+      </tem:getArrayInt>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="http://tempuri.org/getArrayInt" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

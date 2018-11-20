@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8e315202-cf69-4a34-a553-ebcfd2c4e826" isOneWay="false" action="http://tempuri.org/HelloWorld_XML" name="HelloWorld_XML" bindingOperationName="HelloWorld_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8e315202-cf69-4a34-a553-ebcfd2c4e826fileName">HelloWorld_XML</con:setting>
+  </con:settings>
+  <con:call id="71e5fd82-896a-4cac-a473-08b87e3297d3" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:HelloWorld_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/HelloWorld_XML"/>
+  </con:call>
+</con:operation>

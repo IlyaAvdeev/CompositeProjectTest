@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="10710ec6-abd8-4fd9-a9d1-c1489fa1ed33" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="getArrayString TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="10710ec6-abd8-4fd9-a9d1-c1489fa1ed33fileName">getArrayString-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="136bd750-36f1-4c72-8080-24bb3e58af02" name="getArrayString">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>getArrayString</con:operation>
+      <con:request name="getArrayString" id="ddaa183d-36dc-4232-95a9-e0319b87d219">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:getArrayString>\r
+         <!--Optional:-->\r
+         <tem:test>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:string>?</tem:string>\r
+         </tem:test>\r
+      </tem:getArrayString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/getArrayStringRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

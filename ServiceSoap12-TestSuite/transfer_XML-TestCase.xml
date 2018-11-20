@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d09d861b-ec9a-4c2a-9f6f-47dd1520a07c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="transfer_XML TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d09d861b-ec9a-4c2a-9f6f-47dd1520a07cfileName">transfer_XML-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="54889afa-ec2e-4fad-9e2a-b1f7e2eed402" name="transfer_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>transfer_XML</con:operation>
+      <con:request name="transfer_XML" id="07de588d-b3e2-4663-af8c-a6ba684e03e8">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:transfer_XML>\r
+         <!--Optional:-->\r
+         <tem:x>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </tem:x>\r
+      </tem:transfer_XML>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/transfer_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5e93212f-076c-4fcf-b382-30d9ba500e01" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="delay_response TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5e93212f-076c-4fcf-b382-30d9ba500e01fileName">delay_response-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="f5bcf3ac-fc10-47cf-ae2d-0e2921e8bfe0" name="delay_response">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>delay_response</con:operation>
+      <con:request name="delay_response" id="9d4aefe4-ca66-44ef-9030-8cbb9569c0b3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:delay_response>\r
+         <tem:t>?</tem:t>\r
+      </tem:delay_response>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/delay_responseRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

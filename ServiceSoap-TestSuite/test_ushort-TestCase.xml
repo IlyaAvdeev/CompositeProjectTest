@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e9a2d74e-0672-4228-b531-ed3026b8da53" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_ushort TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e9a2d74e-0672-4228-b531-ed3026b8da53fileName">test_ushort-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="e0ad1a4a-a4f7-4f41-b579-2dae68671d59" name="test_ushort">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap</con:interface>
+      <con:operation>test_ushort</con:operation>
+      <con:request name="test_ushort" id="16193df0-729c-4fdd-8f09-04731a862120">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:test_ushort>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_ushort>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/test_ushort"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

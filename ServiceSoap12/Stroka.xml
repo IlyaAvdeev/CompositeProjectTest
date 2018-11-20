@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7a995404-953c-47c1-8e95-d002dceba269" isOneWay="false" action="http://tempuri.org/Stroka" name="Stroka" bindingOperationName="Stroka" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7a995404-953c-47c1-8e95-d002dceba269fileName">Stroka</con:setting>
+  </con:settings>
+  <con:call id="79ac43f2-b875-472b-b799-4fd855284984" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Stroka>\r
+         <!--Optional:-->\r
+         <tem:x>?</tem:x>\r
+      </tem:Stroka>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/StrokaRequest"/>
+  </con:call>
+</con:operation>

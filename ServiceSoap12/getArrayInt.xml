@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d971fe38-31ab-4ff4-a90d-ac82693bd770" isOneWay="false" action="http://tempuri.org/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d971fe38-31ab-4ff4-a90d-ac82693bd770fileName">getArrayInt</con:setting>
+  </con:settings>
+  <con:call id="86204ce0-eecc-4091-bfb2-36391b467e90" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:getArrayInt>\r
+         <!--Optional:-->\r
+         <tem:test>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:int>?</tem:int>\r
+         </tem:test>\r
+      </tem:getArrayInt>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/getArrayIntRequest"/>
+  </con:call>
+</con:operation>

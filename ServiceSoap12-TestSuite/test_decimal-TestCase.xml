@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="dc92905b-233b-4b19-9e8d-13d820def2a4" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_decimal TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dc92905b-233b-4b19-9e8d-13d820def2a4fileName">test_decimal-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="1cb908a4-73c4-4fd2-8520-4e23e403dd30" name="test_decimal">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_decimal</con:operation>
+      <con:request name="test_decimal" id="1e5c1fc1-fae8-41ea-903f-3dc57d1b3f0a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_decimal>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_decimal>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_decimalRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

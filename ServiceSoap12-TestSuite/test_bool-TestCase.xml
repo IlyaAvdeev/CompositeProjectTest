@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="68d5bb04-eddb-4fbe-ad5e-f6c56f9d3e21" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_bool TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="68d5bb04-eddb-4fbe-ad5e-f6c56f9d3e21fileName">test_bool-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="7a127355-04ff-4937-b080-63f3ec583dc5" name="test_bool">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_bool</con:operation>
+      <con:request name="test_bool" id="d5dbc2d7-d9f9-4276-a7c1-0b54dd08e980">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_bool>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_bool>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_boolRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

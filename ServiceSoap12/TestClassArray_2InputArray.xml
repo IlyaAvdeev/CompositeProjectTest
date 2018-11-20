@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5309b171-300e-45c7-8494-ca37ec1a2333" isOneWay="false" action="http://tempuri.org/TestClassArray_2InputArray" name="TestClassArray_2InputArray" bindingOperationName="TestClassArray_2InputArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5309b171-300e-45c7-8494-ca37ec1a2333fileName">TestClassArray_2InputArray</con:setting>
+  </con:settings>
+  <con:call id="ce6aff6d-aded-4b05-80bb-1bf28384d513" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:TestClassArray_2InputArray>\r
+         <!--Optional:-->\r
+         <tem:TCAI1>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:test>\r
+               <tem:test_int>?</tem:test_int>\r
+               <!--Optional:-->\r
+               <tem:test_string>?</tem:test_string>\r
+               <!--Optional:-->\r
+               <tem:test_transfer_array>?</tem:test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:test_array>\r
+               <tem:Test_int>?</tem:Test_int>\r
+               <!--Optional:-->\r
+               <tem:Test_string>?</tem:Test_string>\r
+               <!--Optional:-->\r
+               <tem:Test_transfer_array>?</tem:Test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:Test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:Test_array>\r
+            </tem:test>\r
+         </tem:TCAI1>\r
+         <!--Optional:-->\r
+         <tem:TCAI2>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:test>\r
+               <tem:test_int>?</tem:test_int>\r
+               <!--Optional:-->\r
+               <tem:test_string>?</tem:test_string>\r
+               <!--Optional:-->\r
+               <tem:test_transfer_array>?</tem:test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:test_array>\r
+               <tem:Test_int>?</tem:Test_int>\r
+               <!--Optional:-->\r
+               <tem:Test_string>?</tem:Test_string>\r
+               <!--Optional:-->\r
+               <tem:Test_transfer_array>?</tem:Test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:Test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:Test_array>\r
+            </tem:test>\r
+         </tem:TCAI2>\r
+      </tem:TestClassArray_2InputArray>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/TestClassArray_2InputArrayRequest"/>
+  </con:call>
+</con:operation>

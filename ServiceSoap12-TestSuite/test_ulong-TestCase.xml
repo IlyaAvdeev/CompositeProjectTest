@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="312a7bf9-c728-47d2-b8d7-ea45ca52d88c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_ulong TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="312a7bf9-c728-47d2-b8d7-ea45ca52d88cfileName">test_ulong-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="10e164b5-6efa-4b60-b64f-48fc151d7fcb" name="test_ulong">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>test_ulong</con:operation>
+      <con:request name="test_ulong" id="1ff020df-1ef8-48d5-be9d-e90eaeddfe3e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_ulong>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_ulong>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/test_ulongRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

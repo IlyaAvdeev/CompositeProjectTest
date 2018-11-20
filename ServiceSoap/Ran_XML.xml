@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="66ee5cf8-31cf-4c09-aa5a-d0e8d548d044" isOneWay="false" action="http://tempuri.org/Ran_XML" name="Ran_XML" bindingOperationName="Ran_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="66ee5cf8-31cf-4c09-aa5a-d0e8d548d044fileName">Ran_XML</con:setting>
+  </con:settings>
+  <con:call id="1660cd2c-4acc-419f-94b5-a1537df0d3f8" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Ran_XML>\r
+         <tem:x>?</tem:x>\r
+      </tem:Ran_XML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Ran_XML"/>
+  </con:call>
+</con:operation>

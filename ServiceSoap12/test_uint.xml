@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e03ce040-9e98-4939-9780-0a1b7d56d4c0" isOneWay="false" action="http://tempuri.org/test_uint" name="test_uint" bindingOperationName="test_uint" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e03ce040-9e98-4939-9780-0a1b7d56d4c0fileName">test_uint</con:setting>
+  </con:settings>
+  <con:call id="45260fd9-af71-4675-bf76-44c9f9f92f2b" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_uint>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_uint>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_uintRequest"/>
+  </con:call>
+</con:operation>

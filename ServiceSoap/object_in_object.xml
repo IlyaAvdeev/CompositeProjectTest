@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5b0b6afc-3ac6-4f9e-8a26-38201a405f81" isOneWay="false" action="http://tempuri.org/object_in_object" name="object_in_object" bindingOperationName="object_in_object" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5b0b6afc-3ac6-4f9e-8a26-38201a405f81fileName">object_in_object</con:setting>
+  </con:settings>
+  <con:call id="47e2dfc4-2117-429f-9007-34897f0b43e6" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:object_in_object/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/object_in_object"/>
+  </con:call>
+</con:operation>

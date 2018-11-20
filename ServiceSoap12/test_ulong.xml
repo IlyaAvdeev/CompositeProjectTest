@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="399a1f61-b35c-4fc1-baf2-6935386719cd" isOneWay="false" action="http://tempuri.org/test_ulong" name="test_ulong" bindingOperationName="test_ulong" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="399a1f61-b35c-4fc1-baf2-6935386719cdfileName">test_ulong</con:setting>
+  </con:settings>
+  <con:call id="7987966b-6a21-4bdb-9fb1-5852b2aceee4" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_ulong>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_ulong>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_ulongRequest"/>
+  </con:call>
+</con:operation>

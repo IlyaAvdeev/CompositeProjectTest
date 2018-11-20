@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a975c0c7-6c52-42c1-a134-e84b3c7f9f3e" isOneWay="false" action="http://tempuri.org/transfer_array" name="transfer_array" bindingOperationName="transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a975c0c7-6c52-42c1-a134-e84b3c7f9f3efileName">transfer_array</con:setting>
+  </con:settings>
+  <con:call id="594b7c8d-6626-44b1-9970-5be7a509b6ea" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:transfer_array>\r
+         <!--Optional:-->\r
+         <tem:x>\r
+            <!--Zero or more repetitions:-->\r
+            <tem:int>?</tem:int>\r
+         </tem:x>\r
+      </tem:transfer_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/transfer_array"/>
+  </con:call>
+</con:operation>

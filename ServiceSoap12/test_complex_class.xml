@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="61f1e1f7-8162-4662-a627-211e299346ad" isOneWay="false" action="http://tempuri.org/test_complex_class" name="test_complex_class" bindingOperationName="test_complex_class" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="61f1e1f7-8162-4662-a627-211e299346adfileName">test_complex_class</con:setting>
+  </con:settings>
+  <con:call id="4528dfde-03f9-4859-986a-cbec68be4562" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_complex_class>\r
+         <!--Optional:-->\r
+         <tem:xx>\r
+            <!--Optional:-->\r
+            <tem:trans/>\r
+            <!--Optional:-->\r
+            <tem:trans2/>\r
+            <!--Optional:-->\r
+            <tem:Trans/>\r
+            <!--Optional:-->\r
+            <tem:Trans2/>\r
+         </tem:xx>\r
+      </tem:test_complex_class>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_complex_classRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="04126e0b-7000-4c58-950d-fe940a97561f" isOneWay="false" action="http://tempuri.org/transfer_XML" name="transfer_XML" bindingOperationName="transfer_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="04126e0b-7000-4c58-950d-fe940a97561ffileName">transfer_XML</con:setting>
+  </con:settings>
+  <con:call id="527953d4-3702-40bc-8cbb-e6f050b2cb72" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:transfer_XML>\r
+         <!--Optional:-->\r
+         <tem:x>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </tem:x>\r
+      </tem:transfer_XML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/transfer_XML"/>
+  </con:call>
+</con:operation>

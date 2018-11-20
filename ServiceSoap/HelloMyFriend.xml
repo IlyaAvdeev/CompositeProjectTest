@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a1b5908c-eb21-40f7-a2ba-9f1bd09a7fe1" isOneWay="false" action="http://tempuri.org/HelloMyFriend" name="HelloMyFriend" bindingOperationName="HelloMyFriend" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a1b5908c-eb21-40f7-a2ba-9f1bd09a7fe1fileName">HelloMyFriend</con:setting>
+  </con:settings>
+  <con:call id="77233082-543b-4df5-bef6-ad58bba6cd09" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:HelloMyFriend/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/HelloMyFriend"/>
+  </con:call>
+</con:operation>

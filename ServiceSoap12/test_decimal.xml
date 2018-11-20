@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b664bb85-2cb1-47f1-ac74-7ab183e3a8dc" isOneWay="false" action="http://tempuri.org/test_decimal" name="test_decimal" bindingOperationName="test_decimal" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b664bb85-2cb1-47f1-ac74-7ab183e3a8dcfileName">test_decimal</con:setting>
+  </con:settings>
+  <con:call id="411c954c-31d7-4a75-ad5e-d8e5009bef58" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_decimal>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_decimal>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_decimalRequest"/>
+  </con:call>
+</con:operation>

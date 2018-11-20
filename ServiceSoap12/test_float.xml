@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a1661633-5304-41a6-b180-0b4e2fde2177" isOneWay="false" action="http://tempuri.org/test_float" name="test_float" bindingOperationName="test_float" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a1661633-5304-41a6-b180-0b4e2fde2177fileName">test_float</con:setting>
+  </con:settings>
+  <con:call id="4d209807-4bae-496a-a533-2ce4ba328350" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:test_float>\r
+         <tem:t>?</tem:t>\r
+      </tem:test_float>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/test_floatRequest"/>
+  </con:call>
+</con:operation>

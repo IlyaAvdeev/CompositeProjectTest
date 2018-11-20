@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a63dd1e2-94bf-42ec-8ce1-e087cee80f77" isOneWay="false" action="http://tempuri.org/InputDate" name="InputDate" bindingOperationName="InputDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a63dd1e2-94bf-42ec-8ce1-e087cee80f77fileName">InputDate</con:setting>
+  </con:settings>
+  <con:call id="b47c8d50-979d-4ba2-a751-0657985fff44" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:InputDate>\r
+         <tem:MyInputDate>?</tem:MyInputDate>\r
+      </tem:InputDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/InputDate"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="fa61d29e-bdd8-4d01-bd8d-52d392ecc649" isOneWay="false" action="http://tempuri.org/test_class_array" name="test_class_array" bindingOperationName="test_class_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fa61d29e-bdd8-4d01-bd8d-52d392ecc649fileName">test_class_array</con:setting>
+  </con:settings>
+  <con:call id="321ee5f6-5696-4497-8af4-54998ecc8c1c" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:test_class_array/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/test_class_array"/>
+  </con:call>
+</con:operation>

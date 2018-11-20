@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="a8d59453-fc05-47db-81a1-d3646d76608c" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx?WSDL" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="a8d59453-fc05-47db-81a1-d3646d76608cfileName">ServiceSoap</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx?WSDL">
+    <con:part>
+      <con:url>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx?WSDL</con:url>
+      <con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/"/>
+      <s:element name="HelloMyFriend">
+        <s:complexType/>
+      </s:element>
+      <s:element name="HelloMyFriendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloMyFriendResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_string">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="t" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_stringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_stringResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_byte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:unsignedByte"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_byteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_byteResult" type="s:unsignedByte"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_Sbyte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:byte"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_SbyteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_SbyteResult" type="s:byte"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_short">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_shortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_shortResult" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_int">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_intResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_intResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_long">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:long"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_longResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_longResult" type="s:long"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_ushort">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:unsignedShort"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_ushortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_ushortResult" type="s:unsignedShort"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_uint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:unsignedInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_uintResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_uintResult" type="s:unsignedInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_ulong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:unsignedLong"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_ulongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_ulongResult" type="s:unsignedLong"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_float">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:float"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_floatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_floatResult" type="s:float"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_double">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_doubleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_doubleResult" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_bool">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_boolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_boolResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_char">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s1:char"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_charResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_charResult" type="s1:char"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_decimal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_decimalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="test_decimalResult" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType/>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Vse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="z" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VseResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Stroka">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StrokaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrokaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Date">
+        <s:complexType/>
+      </s:element>
+      <s:element name="DateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DateResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ran">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RanResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Con_Stroka">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="y" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Con_StrokaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Con_StrokaResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="massiv">
+        <s:complexType/>
+      </s:element>
+      <s:element name="massivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="massivResult" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="transfer_array">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transfer_arrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transfer_arrayResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="object_in_object">
+        <s:complexType/>
+      </s:element>
+      <s:element name="object_in_objectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="object_in_objectResult" type="tns:ArrayOfAnyType"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="HelloWorld_XML">
+        <s:complexType/>
+      </s:element>
+      <s:element name="HelloWorld_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorld_XMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ran_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ran_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ran_XMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Date_XML">
+        <s:complexType/>
+      </s:element>
+      <s:element name="Date_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date_XMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class">
+        <s:complexType/>
+      </s:element>
+      <s:complexType name="test">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="test_int" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="test_string" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="test_transfer_array" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="test_array" type="tns:ArrayOfInt"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Test_int" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Test_string" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Test_transfer_array" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Test_array" type="tns:ArrayOfInt"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="test_classResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_classResult" type="tns:test"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class_transfer_array">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="x" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class_transfer_arrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_class_transfer_arrayResult" type="tns:test"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class_array">
+        <s:complexType/>
+      </s:element>
+      <s:complexType name="ArrayOfTest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="test" nillable="true" type="tns:test"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="test_class_arrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_class_arrayResult" type="tns:ArrayOfTest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class_array_input_array">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tt" type="tns:ArrayOfTest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_class_array_input_arrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_class_array_input_arrayResult" type="tns:ArrayOfTest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test_complex_class">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xx" type="tns:test_complex"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="test_complex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:test_complex"/>
+          <s:element minOccurs="0" maxOccurs="1" name="trans2" type="tns:test_complex"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Trans" type="tns:test_complex"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Trans2" type="tns:test_complex"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="test_complex_classResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test_complex_classResult" type="tns:test_complex"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delay_response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="t" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delay_responseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="delay_responseResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inheritance_class">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test" type="tns:level_1_super"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="level_1_super">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:level_1">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="field_int1" type="s:int"/>
+              <s:element minOccurs="0" maxOccurs="1" name="field_string1" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="field_array1" type="tns:ArrayOfInt"/>
+              <s:element minOccurs="1" maxOccurs="1" name="Field_int1" type="s:int"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Field_string1" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Field_array1" type="tns:ArrayOfInt"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="level_1">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="field_int" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="field_string" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="field_array" type="tns:ArrayOfInt"/>
+          <s:element minOccurs="0" maxOccurs="1" name="field_class_test" type="tns:test"/>
+          <s:element minOccurs="0" maxOccurs="1" name="field_class_complex_test" type="tns:test_complex"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Field_int" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Field_string" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Field_array" type="tns:ArrayOfInt"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Field_class_test" type="tns:test"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Field_class_complex_test" type="tns:test_complex"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="inheritance_classResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inheritance_classResult" type="tns:level_1_super"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transfer_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="x">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="transfer_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transfer_XMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="file_XML">
+        <s:complexType/>
+      </s:element>
+      <s:element name="file_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="file_XMLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestClassArray_2InputArray">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TCAI1" type="tns:ArrayOfTest"/>
+            <s:element minOccurs="0" maxOccurs="1" name="TCAI2" type="tns:ArrayOfTest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TCAI1andTCAI2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TCAI1" type="tns:ArrayOfTest"/>
+          <s:element minOccurs="0" maxOccurs="1" name="TCAI2" type="tns:ArrayOfTest"/>
+          <s:element minOccurs="0" maxOccurs="1" name="tCAI1" type="tns:ArrayOfTest"/>
+          <s:element minOccurs="0" maxOccurs="1" name="tCAI2" type="tns:ArrayOfTest"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestClassArray_2InputArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestClassArray_2InputArrayResult" type="tns:TCAI1andTCAI2"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InputDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MyInputDate" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InputDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InputDateResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inheritance_class_super">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test" type="tns:level_1_super_1"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="level_1_super_1">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:level_1_super">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="field_string11" type="s:string"/>
+              <s:element minOccurs="0" maxOccurs="1" name="Field_string11" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="inheritance_class_superResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inheritance_class_superResult" type="tns:level_1_super_1"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getArrayInt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getArrayIntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getArrayIntResult" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getArrayString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="test" type="tns:ArrayOfString"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getArrayStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getArrayStringResult" type="tns:ArrayOfString"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort"/>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloMyFriendSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloMyFriend"/>
+  </wsdl:message>
+  <wsdl:message name="HelloMyFriendSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloMyFriendResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_stringSoapIn">
+    <wsdl:part name="parameters" element="tns:test_string"/>
+  </wsdl:message>
+  <wsdl:message name="test_stringSoapOut">
+    <wsdl:part name="parameters" element="tns:test_stringResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_byteSoapIn">
+    <wsdl:part name="parameters" element="tns:test_byte"/>
+  </wsdl:message>
+  <wsdl:message name="test_byteSoapOut">
+    <wsdl:part name="parameters" element="tns:test_byteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_SbyteSoapIn">
+    <wsdl:part name="parameters" element="tns:test_Sbyte"/>
+  </wsdl:message>
+  <wsdl:message name="test_SbyteSoapOut">
+    <wsdl:part name="parameters" element="tns:test_SbyteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_shortSoapIn">
+    <wsdl:part name="parameters" element="tns:test_short"/>
+  </wsdl:message>
+  <wsdl:message name="test_shortSoapOut">
+    <wsdl:part name="parameters" element="tns:test_shortResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_intSoapIn">
+    <wsdl:part name="parameters" element="tns:test_int"/>
+  </wsdl:message>
+  <wsdl:message name="test_intSoapOut">
+    <wsdl:part name="parameters" element="tns:test_intResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_longSoapIn">
+    <wsdl:part name="parameters" element="tns:test_long"/>
+  </wsdl:message>
+  <wsdl:message name="test_longSoapOut">
+    <wsdl:part name="parameters" element="tns:test_longResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_ushortSoapIn">
+    <wsdl:part name="parameters" element="tns:test_ushort"/>
+  </wsdl:message>
+  <wsdl:message name="test_ushortSoapOut">
+    <wsdl:part name="parameters" element="tns:test_ushortResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_uintSoapIn">
+    <wsdl:part name="parameters" element="tns:test_uint"/>
+  </wsdl:message>
+  <wsdl:message name="test_uintSoapOut">
+    <wsdl:part name="parameters" element="tns:test_uintResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_ulongSoapIn">
+    <wsdl:part name="parameters" element="tns:test_ulong"/>
+  </wsdl:message>
+  <wsdl:message name="test_ulongSoapOut">
+    <wsdl:part name="parameters" element="tns:test_ulongResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_floatSoapIn">
+    <wsdl:part name="parameters" element="tns:test_float"/>
+  </wsdl:message>
+  <wsdl:message name="test_floatSoapOut">
+    <wsdl:part name="parameters" element="tns:test_floatResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_doubleSoapIn">
+    <wsdl:part name="parameters" element="tns:test_double"/>
+  </wsdl:message>
+  <wsdl:message name="test_doubleSoapOut">
+    <wsdl:part name="parameters" element="tns:test_doubleResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_boolSoapIn">
+    <wsdl:part name="parameters" element="tns:test_bool"/>
+  </wsdl:message>
+  <wsdl:message name="test_boolSoapOut">
+    <wsdl:part name="parameters" element="tns:test_boolResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_charSoapIn">
+    <wsdl:part name="parameters" element="tns:test_char"/>
+  </wsdl:message>
+  <wsdl:message name="test_charSoapOut">
+    <wsdl:part name="parameters" element="tns:test_charResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_decimalSoapIn">
+    <wsdl:part name="parameters" element="tns:test_decimal"/>
+  </wsdl:message>
+  <wsdl:message name="test_decimalSoapOut">
+    <wsdl:part name="parameters" element="tns:test_decimalResponse"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse"/>
+  </wsdl:message>
+  <wsdl:message name="VseSoapIn">
+    <wsdl:part name="parameters" element="tns:Vse"/>
+  </wsdl:message>
+  <wsdl:message name="VseSoapOut">
+    <wsdl:part name="parameters" element="tns:VseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="StrokaSoapIn">
+    <wsdl:part name="parameters" element="tns:Stroka"/>
+  </wsdl:message>
+  <wsdl:message name="StrokaSoapOut">
+    <wsdl:part name="parameters" element="tns:StrokaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DateSoapIn">
+    <wsdl:part name="parameters" element="tns:Date"/>
+  </wsdl:message>
+  <wsdl:message name="DateSoapOut">
+    <wsdl:part name="parameters" element="tns:DateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="RanSoapIn">
+    <wsdl:part name="parameters" element="tns:Ran"/>
+  </wsdl:message>
+  <wsdl:message name="RanSoapOut">
+    <wsdl:part name="parameters" element="tns:RanResponse"/>
+  </wsdl:message>
+  <wsdl:message name="Con_StrokaSoapIn">
+    <wsdl:part name="parameters" element="tns:Con_Stroka"/>
+  </wsdl:message>
+  <wsdl:message name="Con_StrokaSoapOut">
+    <wsdl:part name="parameters" element="tns:Con_StrokaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="massivSoapIn">
+    <wsdl:part name="parameters" element="tns:massiv"/>
+  </wsdl:message>
+  <wsdl:message name="massivSoapOut">
+    <wsdl:part name="parameters" element="tns:massivResponse"/>
+  </wsdl:message>
+  <wsdl:message name="transfer_arraySoapIn">
+    <wsdl:part name="parameters" element="tns:transfer_array"/>
+  </wsdl:message>
+  <wsdl:message name="transfer_arraySoapOut">
+    <wsdl:part name="parameters" element="tns:transfer_arrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="object_in_objectSoapIn">
+    <wsdl:part name="parameters" element="tns:object_in_object"/>
+  </wsdl:message>
+  <wsdl:message name="object_in_objectSoapOut">
+    <wsdl:part name="parameters" element="tns:object_in_objectResponse"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorld_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld_XML"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorld_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorld_XMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="Ran_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:Ran_XML"/>
+  </wsdl:message>
+  <wsdl:message name="Ran_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:Ran_XMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="Date_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:Date_XML"/>
+  </wsdl:message>
+  <wsdl:message name="Date_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:Date_XMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_classSoapIn">
+    <wsdl:part name="parameters" element="tns:test_class"/>
+  </wsdl:message>
+  <wsdl:message name="test_classSoapOut">
+    <wsdl:part name="parameters" element="tns:test_classResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_transfer_arraySoapIn">
+    <wsdl:part name="parameters" element="tns:test_class_transfer_array"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_transfer_arraySoapOut">
+    <wsdl:part name="parameters" element="tns:test_class_transfer_arrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_arraySoapIn">
+    <wsdl:part name="parameters" element="tns:test_class_array"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_arraySoapOut">
+    <wsdl:part name="parameters" element="tns:test_class_arrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_array_input_arraySoapIn">
+    <wsdl:part name="parameters" element="tns:test_class_array_input_array"/>
+  </wsdl:message>
+  <wsdl:message name="test_class_array_input_arraySoapOut">
+    <wsdl:part name="parameters" element="tns:test_class_array_input_arrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="test_complex_classSoapIn">
+    <wsdl:part name="parameters" element="tns:test_complex_class"/>
+  </wsdl:message>
+  <wsdl:message name="test_complex_classSoapOut">
+    <wsdl:part name="parameters" element="tns:test_complex_classResponse"/>
+  </wsdl:message>
+  <wsdl:message name="delay_responseSoapIn">
+    <wsdl:part name="parameters" element="tns:delay_response"/>
+  </wsdl:message>
+  <wsdl:message name="delay_responseSoapOut">
+    <wsdl:part name="parameters" element="tns:delay_responseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inheritance_classSoapIn">
+    <wsdl:part name="parameters" element="tns:inheritance_class"/>
+  </wsdl:message>
+  <wsdl:message name="inheritance_classSoapOut">
+    <wsdl:part name="parameters" element="tns:inheritance_classResponse"/>
+  </wsdl:message>
+  <wsdl:message name="transfer_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:transfer_XML"/>
+  </wsdl:message>
+  <wsdl:message name="transfer_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:transfer_XMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="file_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:file_XML"/>
+  </wsdl:message>
+  <wsdl:message name="file_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:file_XMLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TestClassArray_2InputArraySoapIn">
+    <wsdl:part name="parameters" element="tns:TestClassArray_2InputArray"/>
+  </wsdl:message>
+  <wsdl:message name="TestClassArray_2InputArraySoapOut">
+    <wsdl:part name="parameters" element="tns:TestClassArray_2InputArrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InputDateSoapIn">
+    <wsdl:part name="parameters" element="tns:InputDate"/>
+  </wsdl:message>
+  <wsdl:message name="InputDateSoapOut">
+    <wsdl:part name="parameters" element="tns:InputDateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="inheritance_class_superSoapIn">
+    <wsdl:part name="parameters" element="tns:inheritance_class_super"/>
+  </wsdl:message>
+  <wsdl:message name="inheritance_class_superSoapOut">
+    <wsdl:part name="parameters" element="tns:inheritance_class_superResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getArrayIntSoapIn">
+    <wsdl:part name="parameters" element="tns:getArrayInt"/>
+  </wsdl:message>
+  <wsdl:message name="getArrayIntSoapOut">
+    <wsdl:part name="parameters" element="tns:getArrayIntResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getArrayStringSoapIn">
+    <wsdl:part name="parameters" element="tns:getArrayString"/>
+  </wsdl:message>
+  <wsdl:message name="getArrayStringSoapOut">
+    <wsdl:part name="parameters" element="tns:getArrayStringResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="HelloMyFriend">
+      <wsdl:input message="tns:HelloMyFriendSoapIn"/>
+      <wsdl:output message="tns:HelloMyFriendSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_string">
+      <wsdl:input message="tns:test_stringSoapIn"/>
+      <wsdl:output message="tns:test_stringSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_byte">
+      <wsdl:input message="tns:test_byteSoapIn"/>
+      <wsdl:output message="tns:test_byteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_Sbyte">
+      <wsdl:input message="tns:test_SbyteSoapIn"/>
+      <wsdl:output message="tns:test_SbyteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_short">
+      <wsdl:input message="tns:test_shortSoapIn"/>
+      <wsdl:output message="tns:test_shortSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_int">
+      <wsdl:input message="tns:test_intSoapIn"/>
+      <wsdl:output message="tns:test_intSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_long">
+      <wsdl:input message="tns:test_longSoapIn"/>
+      <wsdl:output message="tns:test_longSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_ushort">
+      <wsdl:input message="tns:test_ushortSoapIn"/>
+      <wsdl:output message="tns:test_ushortSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_uint">
+      <wsdl:input message="tns:test_uintSoapIn"/>
+      <wsdl:output message="tns:test_uintSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_ulong">
+      <wsdl:input message="tns:test_ulongSoapIn"/>
+      <wsdl:output message="tns:test_ulongSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_float">
+      <wsdl:input message="tns:test_floatSoapIn"/>
+      <wsdl:output message="tns:test_floatSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_double">
+      <wsdl:input message="tns:test_doubleSoapIn"/>
+      <wsdl:output message="tns:test_doubleSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_bool">
+      <wsdl:input message="tns:test_boolSoapIn"/>
+      <wsdl:output message="tns:test_boolSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_char">
+      <wsdl:input message="tns:test_charSoapIn"/>
+      <wsdl:output message="tns:test_charSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_decimal">
+      <wsdl:input message="tns:test_decimalSoapIn"/>
+      <wsdl:output message="tns:test_decimalSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn"/>
+      <wsdl:output message="tns:HelloWorldSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Vse">
+      <wsdl:input message="tns:VseSoapIn"/>
+      <wsdl:output message="tns:VseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Stroka">
+      <wsdl:input message="tns:StrokaSoapIn"/>
+      <wsdl:output message="tns:StrokaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Date">
+      <wsdl:input message="tns:DateSoapIn"/>
+      <wsdl:output message="tns:DateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Ran">
+      <wsdl:input message="tns:RanSoapIn"/>
+      <wsdl:output message="tns:RanSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Con_Stroka">
+      <wsdl:input message="tns:Con_StrokaSoapIn"/>
+      <wsdl:output message="tns:Con_StrokaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="massiv">
+      <wsdl:input message="tns:massivSoapIn"/>
+      <wsdl:output message="tns:massivSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_array">
+      <wsdl:input message="tns:transfer_arraySoapIn"/>
+      <wsdl:output message="tns:transfer_arraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="object_in_object">
+      <wsdl:input message="tns:object_in_objectSoapIn"/>
+      <wsdl:output message="tns:object_in_objectSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld_XML">
+      <wsdl:input message="tns:HelloWorld_XMLSoapIn"/>
+      <wsdl:output message="tns:HelloWorld_XMLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Ran_XML">
+      <wsdl:input message="tns:Ran_XMLSoapIn"/>
+      <wsdl:output message="tns:Ran_XMLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Date_XML">
+      <wsdl:input message="tns:Date_XMLSoapIn"/>
+      <wsdl:output message="tns:Date_XMLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_class">
+      <wsdl:input message="tns:test_classSoapIn"/>
+      <wsdl:output message="tns:test_classSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_transfer_array">
+      <wsdl:input message="tns:test_class_transfer_arraySoapIn"/>
+      <wsdl:output message="tns:test_class_transfer_arraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array">
+      <wsdl:input message="tns:test_class_arraySoapIn"/>
+      <wsdl:output message="tns:test_class_arraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array_input_array">
+      <wsdl:input message="tns:test_class_array_input_arraySoapIn"/>
+      <wsdl:output message="tns:test_class_array_input_arraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="test_complex_class">
+      <wsdl:input message="tns:test_complex_classSoapIn"/>
+      <wsdl:output message="tns:test_complex_classSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="delay_response">
+      <wsdl:input message="tns:delay_responseSoapIn"/>
+      <wsdl:output message="tns:delay_responseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class">
+      <wsdl:input message="tns:inheritance_classSoapIn"/>
+      <wsdl:output message="tns:inheritance_classSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_XML">
+      <wsdl:input message="tns:transfer_XMLSoapIn"/>
+      <wsdl:output message="tns:transfer_XMLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="file_XML">
+      <wsdl:input message="tns:file_XMLSoapIn"/>
+      <wsdl:output message="tns:file_XMLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TestClassArray_2InputArray">
+      <wsdl:input message="tns:TestClassArray_2InputArraySoapIn"/>
+      <wsdl:output message="tns:TestClassArray_2InputArraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InputDate">
+      <wsdl:input message="tns:InputDateSoapIn"/>
+      <wsdl:output message="tns:InputDateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class_super">
+      <wsdl:input message="tns:inheritance_class_superSoapIn"/>
+      <wsdl:output message="tns:inheritance_class_superSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayInt">
+      <wsdl:input message="tns:getArrayIntSoapIn"/>
+      <wsdl:output message="tns:getArrayIntSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayString">
+      <wsdl:input message="tns:getArrayStringSoapIn"/>
+      <wsdl:output message="tns:getArrayStringSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloMyFriend">
+      <soap:operation soapAction="http://tempuri.org/HelloMyFriend" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_string">
+      <soap:operation soapAction="http://tempuri.org/test_string" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_byte">
+      <soap:operation soapAction="http://tempuri.org/test_byte" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_Sbyte">
+      <soap:operation soapAction="http://tempuri.org/test_Sbyte" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_short">
+      <soap:operation soapAction="http://tempuri.org/test_short" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_int">
+      <soap:operation soapAction="http://tempuri.org/test_int" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_long">
+      <soap:operation soapAction="http://tempuri.org/test_long" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_ushort">
+      <soap:operation soapAction="http://tempuri.org/test_ushort" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_uint">
+      <soap:operation soapAction="http://tempuri.org/test_uint" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_ulong">
+      <soap:operation soapAction="http://tempuri.org/test_ulong" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_float">
+      <soap:operation soapAction="http://tempuri.org/test_float" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_double">
+      <soap:operation soapAction="http://tempuri.org/test_double" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_bool">
+      <soap:operation soapAction="http://tempuri.org/test_bool" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_char">
+      <soap:operation soapAction="http://tempuri.org/test_char" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_decimal">
+      <soap:operation soapAction="http://tempuri.org/test_decimal" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vse">
+      <soap:operation soapAction="http://tempuri.org/Vse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stroka">
+      <soap:operation soapAction="http://tempuri.org/Stroka" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Date">
+      <soap:operation soapAction="http://tempuri.org/Date" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ran">
+      <soap:operation soapAction="http://tempuri.org/Ran" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Con_Stroka">
+      <soap:operation soapAction="http://tempuri.org/Con_Stroka" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="massiv">
+      <soap:operation soapAction="http://tempuri.org/massiv" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_array">
+      <soap:operation soapAction="http://tempuri.org/transfer_array" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="object_in_object">
+      <soap:operation soapAction="http://tempuri.org/object_in_object" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld_XML">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld_XML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ran_XML">
+      <soap:operation soapAction="http://tempuri.org/Ran_XML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Date_XML">
+      <soap:operation soapAction="http://tempuri.org/Date_XML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class">
+      <soap:operation soapAction="http://tempuri.org/test_class" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_transfer_array">
+      <soap:operation soapAction="http://tempuri.org/test_class_transfer_array" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array">
+      <soap:operation soapAction="http://tempuri.org/test_class_array" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array_input_array">
+      <soap:operation soapAction="http://tempuri.org/test_class_array_input_array" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_complex_class">
+      <soap:operation soapAction="http://tempuri.org/test_complex_class" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delay_response">
+      <soap:operation soapAction="http://tempuri.org/delay_response" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class">
+      <soap:operation soapAction="http://tempuri.org/inheritance_class" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_XML">
+      <soap:operation soapAction="http://tempuri.org/transfer_XML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="file_XML">
+      <soap:operation soapAction="http://tempuri.org/file_XML" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestClassArray_2InputArray">
+      <soap:operation soapAction="http://tempuri.org/TestClassArray_2InputArray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputDate">
+      <soap:operation soapAction="http://tempuri.org/InputDate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class_super">
+      <soap:operation soapAction="http://tempuri.org/inheritance_class_super" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayInt">
+      <soap:operation soapAction="http://tempuri.org/getArrayInt" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayString">
+      <soap:operation soapAction="http://tempuri.org/getArrayString" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloMyFriend">
+      <soap12:operation soapAction="http://tempuri.org/HelloMyFriend" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_string">
+      <soap12:operation soapAction="http://tempuri.org/test_string" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_byte">
+      <soap12:operation soapAction="http://tempuri.org/test_byte" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_Sbyte">
+      <soap12:operation soapAction="http://tempuri.org/test_Sbyte" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_short">
+      <soap12:operation soapAction="http://tempuri.org/test_short" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_int">
+      <soap12:operation soapAction="http://tempuri.org/test_int" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_long">
+      <soap12:operation soapAction="http://tempuri.org/test_long" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_ushort">
+      <soap12:operation soapAction="http://tempuri.org/test_ushort" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_uint">
+      <soap12:operation soapAction="http://tempuri.org/test_uint" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_ulong">
+      <soap12:operation soapAction="http://tempuri.org/test_ulong" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_float">
+      <soap12:operation soapAction="http://tempuri.org/test_float" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_double">
+      <soap12:operation soapAction="http://tempuri.org/test_double" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_bool">
+      <soap12:operation soapAction="http://tempuri.org/test_bool" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_char">
+      <soap12:operation soapAction="http://tempuri.org/test_char" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_decimal">
+      <soap12:operation soapAction="http://tempuri.org/test_decimal" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vse">
+      <soap12:operation soapAction="http://tempuri.org/Vse" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stroka">
+      <soap12:operation soapAction="http://tempuri.org/Stroka" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Date">
+      <soap12:operation soapAction="http://tempuri.org/Date" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ran">
+      <soap12:operation soapAction="http://tempuri.org/Ran" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Con_Stroka">
+      <soap12:operation soapAction="http://tempuri.org/Con_Stroka" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="massiv">
+      <soap12:operation soapAction="http://tempuri.org/massiv" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_array">
+      <soap12:operation soapAction="http://tempuri.org/transfer_array" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="object_in_object">
+      <soap12:operation soapAction="http://tempuri.org/object_in_object" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld_XML">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld_XML" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ran_XML">
+      <soap12:operation soapAction="http://tempuri.org/Ran_XML" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Date_XML">
+      <soap12:operation soapAction="http://tempuri.org/Date_XML" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class">
+      <soap12:operation soapAction="http://tempuri.org/test_class" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_transfer_array">
+      <soap12:operation soapAction="http://tempuri.org/test_class_transfer_array" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array">
+      <soap12:operation soapAction="http://tempuri.org/test_class_array" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_class_array_input_array">
+      <soap12:operation soapAction="http://tempuri.org/test_class_array_input_array" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test_complex_class">
+      <soap12:operation soapAction="http://tempuri.org/test_complex_class" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delay_response">
+      <soap12:operation soapAction="http://tempuri.org/delay_response" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class">
+      <soap12:operation soapAction="http://tempuri.org/inheritance_class" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transfer_XML">
+      <soap12:operation soapAction="http://tempuri.org/transfer_XML" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="file_XML">
+      <soap12:operation soapAction="http://tempuri.org/file_XML" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestClassArray_2InputArray">
+      <soap12:operation soapAction="http://tempuri.org/TestClassArray_2InputArray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputDate">
+      <soap12:operation soapAction="http://tempuri.org/InputDate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inheritance_class_super">
+      <soap12:operation soapAction="http://tempuri.org/inheritance_class_super" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayInt">
+      <soap12:operation soapAction="http://tempuri.org/getArrayInt" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArrayString">
+      <soap12:operation soapAction="http://tempuri.org/getArrayString" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content>
+      <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+  </con:endpoints>
+</con:interface>

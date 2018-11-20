@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="da73fb1b-2303-48bd-81e4-dd51d7d35101" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Ran_XML TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="da73fb1b-2303-48bd-81e4-dd51d7d35101fileName">Ran_XML-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="282ff56e-2123-407a-8cfb-0c92065f1ed7" name="Ran_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>Ran_XML</con:operation>
+      <con:request name="Ran_XML" id="1bf1982c-abba-46ab-a4f6-fcdd1b763d8f">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Ran_XML>\r
+         <tem:x>?</tem:x>\r
+      </tem:Ran_XML>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/Ran_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

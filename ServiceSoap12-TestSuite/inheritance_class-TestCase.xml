@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="52ab80c3-6110-4266-a9cf-d929036bb790" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="inheritance_class TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="52ab80c3-6110-4266-a9cf-d929036bb790fileName">inheritance_class-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="73e487ab-b37c-42eb-a12a-2e3cfaa4a7c9" name="inheritance_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServiceSoap12</con:interface>
+      <con:operation>inheritance_class</con:operation>
+      <con:request name="inheritance_class" id="84d0bf3e-c647-4ff7-80aa-99a9d3bb2279">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:inheritance_class>\r
+         <!--Optional:-->\r
+         <tem:test>\r
+            <tem:field_int>?</tem:field_int>\r
+            <!--Optional:-->\r
+            <tem:field_string>?</tem:field_string>\r
+            <!--Optional:-->\r
+            <tem:field_array>\r
+               <!--Zero or more repetitions:-->\r
+               <tem:int>?</tem:int>\r
+            </tem:field_array>\r
+            <!--Optional:-->\r
+            <tem:field_class_test>\r
+               <tem:test_int>?</tem:test_int>\r
+               <!--Optional:-->\r
+               <tem:test_string>?</tem:test_string>\r
+               <!--Optional:-->\r
+               <tem:test_transfer_array>?</tem:test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:test_array>\r
+               <tem:Test_int>?</tem:Test_int>\r
+               <!--Optional:-->\r
+               <tem:Test_string>?</tem:Test_string>\r
+               <!--Optional:-->\r
+               <tem:Test_transfer_array>?</tem:Test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:Test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:Test_array>\r
+            </tem:field_class_test>\r
+            <!--Optional:-->\r
+            <tem:field_class_complex_test>\r
+               <!--Optional:-->\r
+               <tem:trans/>\r
+               <!--Optional:-->\r
+               <tem:trans2/>\r
+               <!--Optional:-->\r
+               <tem:Trans/>\r
+               <!--Optional:-->\r
+               <tem:Trans2/>\r
+            </tem:field_class_complex_test>\r
+            <tem:Field_int>?</tem:Field_int>\r
+            <!--Optional:-->\r
+            <tem:Field_string>?</tem:Field_string>\r
+            <!--Optional:-->\r
+            <tem:Field_array>\r
+               <!--Zero or more repetitions:-->\r
+               <tem:int>?</tem:int>\r
+            </tem:Field_array>\r
+            <!--Optional:-->\r
+            <tem:Field_class_test>\r
+               <tem:test_int>?</tem:test_int>\r
+               <!--Optional:-->\r
+               <tem:test_string>?</tem:test_string>\r
+               <!--Optional:-->\r
+               <tem:test_transfer_array>?</tem:test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:test_array>\r
+               <tem:Test_int>?</tem:Test_int>\r
+               <!--Optional:-->\r
+               <tem:Test_string>?</tem:Test_string>\r
+               <!--Optional:-->\r
+               <tem:Test_transfer_array>?</tem:Test_transfer_array>\r
+               <!--Optional:-->\r
+               <tem:Test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <tem:int>?</tem:int>\r
+               </tem:Test_array>\r
+            </tem:Field_class_test>\r
+            <!--Optional:-->\r
+            <tem:Field_class_complex_test>\r
+               <!--Optional:-->\r
+               <tem:trans/>\r
+               <!--Optional:-->\r
+               <tem:trans2/>\r
+               <!--Optional:-->\r
+               <tem:Trans/>\r
+               <!--Optional:-->\r
+               <tem:Trans2/>\r
+            </tem:Field_class_complex_test>\r
+            <tem:field_int1>?</tem:field_int1>\r
+            <!--Optional:-->\r
+            <tem:field_string1>?</tem:field_string1>\r
+            <!--Optional:-->\r
+            <tem:field_array1>\r
+               <!--Zero or more repetitions:-->\r
+               <tem:int>?</tem:int>\r
+            </tem:field_array1>\r
+            <tem:Field_int1>?</tem:Field_int1>\r
+            <!--Optional:-->\r
+            <tem:Field_string1>?</tem:Field_string1>\r
+            <!--Optional:-->\r
+            <tem:Field_array1>\r
+               <!--Zero or more repetitions:-->\r
+               <tem:int>?</tem:int>\r
+            </tem:Field_array1>\r
+         </tem:test>\r
+      </tem:inheritance_class>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://tempuri.org/ServiceSoap/inheritance_classRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="b52e8fb7-6e95-41ea-98c1-149489883725" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx?WSDL" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="b52e8fb7-6e95-41ea-98c1-149489883725fileName">ServiceSoap12</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://rapis02.aqa.com.ru/WsSecurity/UsernameTokenWSE30/Service.asmx</con:endpoint>
+  </con:endpoints>
+</con:interface>
